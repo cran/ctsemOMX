@@ -202,7 +202,7 @@ ctFit  <- function(dat, ctmodelobj, dataform='auto',
   
   
   if(dataform == 'long'){
-    idcol='id'
+    idcol <- ctmodelobj$id
     obsTpoints=max(unlist(lapply(unique(dat[,idcol]),function(x) 
       length(dat[dat[,idcol]==x, idcol]) )))
     
