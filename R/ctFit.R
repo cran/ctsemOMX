@@ -160,7 +160,7 @@ ctFit  <- function(dat, ctmodelobj, dataform='auto',
   
   if(!is.null(args$datawide)) {
     warning('ctsem now uses the dat argument instead of the datawide argument, and the form (wide or long) may be specified via the dataform argument.')
-    if(class(try(length(dat),silent = TRUE)) == 'try-error') {
+    if('try-error' %in% class(try(length(dat),silent = TRUE))) {
       message ('dat not specified, using datawide')
       dat <- datawide
     }
@@ -291,7 +291,7 @@ ctFit  <- function(dat, ctmodelobj, dataform='auto',
     ####0 variance predictor fix
     varCheck<-try(any(diag(stats::cov(datawide[, paste0(TDpredNames, '_T', rep(0:(Tpoints-1), each=n.TDpred))],
       use="pairwise.complete.obs"))==0))
-    if(class(varCheck)=='try-error' || any(is.na(varCheck))) {
+    if('try-error' %in% class(varCheck) || any(is.na(varCheck))) {
       warning('unable to compute covariance matrix for time dependent predictors - unstable estimates may result if any variances are 0')
       varCheck<-FALSE
     }
@@ -2235,7 +2235,7 @@ ctFit  <- function(dat, ctmodelobj, dataform='auto',
       message(paste(names(newstarts), ": ", newstarts, "\n"))
     }
     
-    if(class(newstarts)!="try-error" & !is.null(newstarts)) model<-OpenMx::omxSetParameters(model, 
+    if(!"try-error" %in% class(newstarts) & !is.null(newstarts)) model<-OpenMx::omxSetParameters(model, 
       labels=names(newstarts),  values=newstarts,strict=FALSE) #set the params of it
     #     objective<-targetObjective #revert our objective to whatever was specified
     #     setobjective() #and set it

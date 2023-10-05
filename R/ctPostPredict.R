@@ -35,7 +35,7 @@ ctPostPredict<-function(fit,timestep=.1,n.subjects = 100,probs=c(.025,.5,.975),
   indPlotArgs=list(colourby = 'subject',lwd=2,new=FALSE,type='p',opacity=.3),
   mfrow='auto'){
 
- if(class(fit)!='ctsemFit') stop('not a ctsemFit object')
+ if(!'ctsemFit' %in% class(fit)) stop('not a ctsemFit object')
 pcheck=ctGenerateFromFit(fit = fit,n.subjects = n.subjects,timestep = timestep)
 
 timeupper=max(pcheck[,'time'])
