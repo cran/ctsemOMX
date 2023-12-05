@@ -1,4 +1,4 @@
-06cecd1074d22c23adbdba073eba3837 *DESCRIPTION
+fcda2a4479d7fb6c0707e89f5e443129 *DESCRIPTION
 771062eccb76230cab16ab33e2f95997 *NAMESPACE
 b2b266d51686b93aeb4221264ee258fb *NEWS
 293d64a32f13548c8e78dc5fcceb7af4 *R/carefulFit.R
@@ -13,8 +13,8 @@ fd2d5c5dbc4c060523c39cd46ff17ee1 *R/ctGenerateFromFit.R
 c55da50b3602f86b6ff7f3cf9b706db0 *R/ctMultigroupFit.R
 b34f7ede0d94d53fa8262f6e0aedc3b3 *R/ctPostPredict.R
 b512d7a8fd467e4bad48f4b342ae1314 *R/ctRefineTo.R
-b134656d69bff9accf6baaf85e4230a3 *R/ctsem-package.R
 8b66d0098fdaaca666c56553006b02b9 *R/ctsem.R
+b134656d69bff9accf6baaf85e4230a3 *R/ctsemOMX-package.R
 c85df2d2964fec47f3acb0841cc32042 *R/ctsemOMXutils.R
 7e70e2fb0818fb34cb106ba768822815 *R/plot.ctsemFit.R
 17b7e490b7cbb17519f42b1c801be888 *R/summary.ctsemFit.R
@@ -30,7 +30,7 @@ da3d96fffc38d8893950c2800816b294 *data/ctExample4.rda
 db82b03e57c9cac650f68cfbee6ef3c8 *data/longexample.rda
 efff50095c89aaaca5e85e36b39ba822 *inst/CITATION
 87701dd951765516008e6099cb32efb6 *inst/doc/ctsem.R
-5e6e2c36f5142fc0029e9e9b032b61e5 *inst/doc/ctsem.pdf
+da1d9690ad6c44721a7dcbf3dd984160 *inst/doc/ctsem.pdf
 ca1344b2632ea19bc29b81a041139cfe *inst/doc/ctsem.rnw
 08c9254b9826a0f19e67a17f7bc142e8 *man/AnomAuth.Rd
 e97e2a5e826e8badf4496df9d56df7fc *man/Oscillating.Rd
@@ -50,7 +50,7 @@ c25e12b21f98438c469776ad28132e29 *man/ctGenerateFromFit.Rd
 3016bbd0256fe215b20261390e28effc *man/ctPlot.Rd
 d6a6ae63fc384eb4effb7933ddec493e *man/ctPostPredict.Rd
 2f9cb3ff7b674328a1586f440e1ee1fe *man/ctRefineTo.Rd
-1fe87804b021e7545fd3a865ed530611 *man/ctsemOMX.Rd
+722d2f6488ec1958220805a6e3c65af3 *man/ctsemOMX.Rd
 5613e30d9dde49993679246df9bf7c44 *man/datastructure.Rd
 e1aa6045bee358b4260a9e8b61d4d53e *man/longexample.Rd
 d67b05382d1a3399d5725a156379ce8f *man/plot.ctsemFit.Rd
